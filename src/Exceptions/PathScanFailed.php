@@ -10,7 +10,7 @@
 
 declare(strict_types = 1);
 
-namespace HalimonAlexander\Filesystem\Extensions;
+namespace HalimonAlexander\Filesystem\Exceptions;
 
 class PathScanFailed extends \RuntimeException
 {

@@ -13,7 +13,7 @@ declare(strict_types = 1);
 namespace HalimonAlexander\Filesystem;
 
 use HalimonAlexander\Filesystem\Collections\RawCollection;
-use HalimonAlexander\Filesystem\Extensions\PathScanFailed;
+use HalimonAlexander\Filesystem\Exceptions\PathScanFailed;
 
 class Filesystem
 {
