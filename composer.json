@@ -1,0 +1,23 @@
+{
+  "name": "halimonalexander/filesystem",
+  "description": "Filesystem fetcher library",
+  "license": "BSD-3-Clause",
+  "homepage": "https://github.com/halimonalexander/filesystem",
+  "authors": [
+    {
+      "name": "Halimon Alexander",
+      "email": "a@halimon.me",
+      "role": "lead"
+    }
+  ],
+  "require": {
+    "php": "^7.4"
+  },
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "HalimonAlexander\\Filesystem\\": "src/"
+    }
+  }
+}
