@@ -31,8 +31,8 @@ class ExtensionFilter implements FilterInterface
             throw new InvalidFilterApplied("Extension filter can be used for FilesCollection only");
         }
 
-        return array_filter($collection->get(), function(string $item) {
+        return array_values(array_filter($collection->get(), function(string $item) {
             return pathinfo($item, \PATHINFO_EXTENSION) === $this->extension;
-        });
+        }));
     }
 }
