@@ -24,7 +24,7 @@ class Filesystem
             if ($list === false) {
                 throw new \ErrorException();
             }
-        } catch (\ErrorException $exception) {
+        } catch (\ErrorException|\Throwable $exception) {
             throw new PathScanFailed('Unable to fetch files and folders list in path: ' . $path);
         }
 
