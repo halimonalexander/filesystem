@@ -66,6 +66,18 @@ class RawCollection implements CollectionInterface
 
     public function get(): array
     {
-        return $this->list;
+        $filteredList = [];
+        foreach ($this->list as $item) {
+            if ($item === "." || $item === "..") {
+                continue;
+            }
+
+            $filename = $this->path . $item;
+            if (\is_readable($filename)) {
+                $filteredList[] = $filename;
+            }
+        }
+
+        return $filteredList;
     }
 }
