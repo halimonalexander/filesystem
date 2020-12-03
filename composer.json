@@ -14,10 +14,12 @@
     "php": "^7.4"
   },
   "require-dev": {
+    "phpunit/phpunit": "^9.4"
   },
   "autoload": {
     "psr-4": {
-      "HalimonAlexander\\Filesystem\\": "src/"
+      "HalimonAlexander\\Filesystem\\": "src/",
+      "HalimonAlexander\\Tests\\Filesystem\\": "tests/"
     }
   }
 }
